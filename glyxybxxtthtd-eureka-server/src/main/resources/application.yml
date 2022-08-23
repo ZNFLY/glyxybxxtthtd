@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8761
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/glmc?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true

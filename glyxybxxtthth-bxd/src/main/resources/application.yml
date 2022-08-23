@@ -1,0 +1,58 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 200MB
+      max-file-size: 200MB
+  application:
+    name: glyxybxxtthtd-bxd
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    url: jdbc:mysql://mysql:3306/glmc?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    url: jdbc:mysql:/8.141.150.151:3306/glmc?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    #    password: yibanglmcdb_$4816889@#=KMYs6
+    #    password: YoungKbt1234
+    type: com.alibaba.druid.pool.DruidDataSource
+  devtools:
+    restart:
+      enabled: false
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp
+#    static-path-pattern: /bxdimg/**
+#  resources:
+#    static-locations: file:D:/bxdimg/
+
+#mybatis:
+#  mapper-locations: classpath:mapping/*.xml
+#  type-aliases-package: com.glyxybxhtxt.dataobject
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 8089
+  tomcat:
+    max-http-form-post-size: 80000000
+#http_pool:
+#  max_total: 200
+#  default_max_per_route: 100
+#  connect_timeout: 5000
+#  connection_request_timeout: 1000
+#  socket_timeout: 65000
+#  validate_after_inactivity: 2000
+#
+#upload:
+#  #  生产需要第一个，服务器需要第二个
+#  picture_src: E:/duty-img/
+#  #  picture_src: /ROOT/static/
+#
+## 生产环境和开发环境注释掉下面，这个是服务器环境需要的日志文件
+##logging:
+##  config: classpath:log.xml
+#
+## 数据库备份配置文件
+#remore:
+#  datahome: glmc
+#  table: bxd

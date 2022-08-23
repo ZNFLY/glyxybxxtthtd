@@ -12,6 +12,8 @@
         <module>glyxybxxtthth-bxqu</module>
         <module>glyxybxxtthth-dict</module>
         <module>glyxybxxtthth-common</module>
+        <module>glyxybxxtthth-admin</module>
+        <module>glyxybxxtthth-ewm</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
