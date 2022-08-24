@@ -12,6 +12,8 @@
         <module>glyxybxxtthth-bxqu</module>
         <module>glyxybxxtthth-dict</module>
         <module>glyxybxxtthth-common</module>
+        <module>glyxybxxtthth-admin</module>
+        <module>glyxybxxtthth-ewm</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -267,6 +269,7 @@
             <artifactId>weixin-java-mp</artifactId>
             <version>3.3.0</version>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -275,7 +278,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>Hoxton.SR10</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -288,6 +291,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.1.RELEASE</version>
             </plugin>
         </plugins>
 
