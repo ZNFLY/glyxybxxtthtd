@@ -1,6 +1,7 @@
 package cn.edu.guet.controller;
 
 import cn.edu.guet.response.ResponseData;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BxdServlet {
 
-    @PostMapping("/AdminServlet/test")
+    @GetMapping("/AdminServlet/test")
     public ResponseData test(){
         System.out.println("测试使用");
         return new ResponseData("2");
